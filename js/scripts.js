@@ -1,6 +1,6 @@
 //Vaiáveis e seleção de elementos
 
-const apiKey = "fb1c047c78b250ff1d6d64d2e93debce";
+const apiKey = "";
 const apiCountryURL = "https://countryflagsapi.com/png/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
