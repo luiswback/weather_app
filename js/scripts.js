@@ -1,7 +1,7 @@
 //Vaiáveis e seleção de elementos
 
 const apiKey = "fb1c047c78b250ff1d6d64d2e93debce";
-const apiCountryURL = "https://countryflagsapi.com/png/";
+const apiCountryURL = "https://flagsapi.com/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
 
@@ -73,7 +73,9 @@ const showWeatherData = async (city) => {
     temperatureElement.innerText = parseInt(data['main']['temp']);
     descriptionElement.innerText = data['weather'][0].description
     weatherIconElement.setAttribute("src", `http://openweathermap.org/img/wn/${data['weather'][0].icon}.png`);
-    countryElement.setAttribute("src", apiCountryURL + data['sys'].country)
+    countryElement.setAttribute("src", apiCountryURL + data['sys'].country + '/shiny/64.png')
+    console.log(apiCountryURL)
+    console.log(data['sys'].country)
     humidityElement.innerText = `${data['main']['humidity']}%`
     windElement.innerText = `${(data['wind'].speed)}km/h`
 
